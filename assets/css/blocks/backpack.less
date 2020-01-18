@@ -1,0 +1,333 @@
+// main: ../style.less
+
+/*Backpack-voyager
+====================*/
+
+.backpack {
+    margin-bottom: 50px;
+    padding: 70px 0;
+}
+
+.backpack__specification {
+    margin-bottom: 100px;
+    padding: 100px 0; 
+    position: relative;
+}
+
+.backpack__background {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+
+.backpack__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.backpack__name {
+    min-width: 570px; 
+    margin-right: -665px;
+    margin-left: 160px;
+
+    color: #fff;
+
+    position: relative;
+    z-index: 2;
+}
+
+.backpack__description {
+    min-width: 800px;
+    margin-left: 290px;
+    padding: 20px;
+    padding-left: 400px;
+
+    border: 3px solid #b8a47e;
+    border-bottom: none;
+
+    position: relative;
+    z-index: 1;
+}
+
+.backpack__description:before {
+    content: '';
+    display: block;
+    width: 600px;
+    height: 3px;
+    background-color: #b8a47e;
+    position: absolute;
+    bottom: 0;
+    
+    z-index: 1;
+}
+
+.backpack__description--voyager:before {
+    left: 0;
+}
+
+.backpack__description:after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #b8a47e;
+    position: absolute;
+    bottom: 0;
+    
+    z-index: 1;
+}
+
+.backpack__description--voyager:after {
+    right: 0;
+}
+
+.backpack__text {
+    color: #a7a7a7;
+    line-height: 2.5;
+}
+
+.backpack__title,
+.backpack__subtitle {
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.backpack__title {
+    font-size: 40px;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+.backpack__subtitle {
+    font-size: 20px;
+}
+
+.backpack__btn {
+    width: 3px;
+    height: 60px;
+    padding: 0;
+
+    color: transparent;
+    font-size: 0;
+   
+    border: 0;
+    background-color: @gray;
+
+    position: absolute;
+    top: 100%;
+    right: 18%;
+    z-index: 1;
+}
+
+.backpack__btn:after {
+    content: '';
+    display: block;
+
+    width: 15px;
+    height: 15px;
+
+    border-right: 3px solid @gray;
+    border-bottom: 3px solid  @gray;
+
+    transform: rotate(45deg);
+
+    position: absolute;
+    top: 74%;
+    right: -6px;
+    z-index: 1;
+}
+
+
+/*Backpack-drifter
+====================*/
+.backpack-1 {
+    background-color: #ededed;
+}
+
+.backpack-1--background {
+    background-position: right;
+}
+
+
+.backpack-1--description {
+    padding-left: 20px;
+    padding-right: 400px;
+    margin-left: 200px;
+}
+
+.backpack-1--description:before {
+    right: 0;
+}
+
+.backpack-1--description:after {
+    left: 0;
+}
+
+.backpack-1--content {
+    margin-right: 0;
+    margin-left: -250px;
+}
+
+.backpack-1--name {
+    margin-right: -1200px;
+    margin-left: 800px;
+}
+
+.backpack-1--title,
+.backpack-1--subtitle {
+    text-align-last: left;
+}
+
+.backpack-1--btn {
+    left: 18%;
+}
+
+
+
+/*Media*/
+/*Max-width: 1200px*/
+@media(max-width: 1200px) {
+    .backpack__name--voyager {
+        margin-left: 0;
+    }
+
+    .backpack__description--voyager {
+        margin-left: 320px;
+    }
+
+    .backpack__text {
+        color: @white;
+    }
+
+}
+
+/*Max-width: 990px*/
+@media (max-width: 990px) {
+    .backpack__name--voyager {
+        margin-left: -60px;
+    }
+
+    .backpack__description--voyager {
+        min-width: 700px;
+        margin-left: 385px;
+        padding-left: 300px;
+    }
+
+    .backpack__description--voyager:before {
+        width: 500px;
+    }
+
+    .backpack-1--content {
+        margin-left: -350px;
+    }
+
+    .backpack-1--description {
+        margin-left: 200px;
+        padding-right: 420px;
+    }
+
+    .backpack-1--name {
+        margin-right: -1155px;
+        margin-left: 740px;
+    }
+
+    .backpack__btn {
+        right: 21%;
+    }
+}
+
+/*Max-width: 770px*/
+@media (max-width: 770px) {
+    .backpack__content {
+        flex-direction: column;
+    }
+
+    .backpack__name {
+        margin: 0;
+    }
+    
+    .backpack__description {
+        margin: 0;
+        padding: 0;
+    }
+
+    .backpack__btn {
+        right: 22%;
+    }
+
+    .backpack-1--content {
+        margin: 0;
+    }
+
+    .backpack__description {
+        min-width: 700px;
+    }
+
+    .backpack__description:before {
+        width: 500px;
+    }
+
+    .backpack-1--btn {
+        left: 22%;
+    }
+}
+
+/*Max-width: 575px*/ 
+@media (max-width: 575px) {
+    .backpack__name {
+        min-width: 505px;
+    }
+
+    .backpack__description {
+        min-width: 535px;
+    }
+
+    .backpack__description:before {
+        width: 350px;
+    }
+
+    .backpack__btn {
+        right: 25.5%;
+    }
+
+    .backpack-1--btn {
+        left: 26%;
+    }
+}
+
+/*Max-width: 470px*/ 
+@media (max-width: 470px) {
+    .backpack__name {
+        min-width: 405px;
+    }
+
+    .backpack__description {
+        min-width: 435px;
+    }
+
+    .backpack__title {
+        font-size: @regular-big;
+    }
+
+    .backpack__description:before {
+        width: 250px;
+    }
+
+    .backpack__btn {
+        right: 31.5%;
+    }
+
+    .backpack-1--btn {
+        left: 34%;
+    }
+}

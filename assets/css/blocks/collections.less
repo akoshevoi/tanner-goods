@@ -1,0 +1,66 @@
+//main: ../style.less
+
+.collections {
+    padding: 50px 0;
+}
+
+.collections__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.collections__title {
+    margin-bottom: 15px;
+
+    font-size: @main-heading;
+    color: @black;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 15px;
+    text-align: center;
+}
+
+.collections__subtitle {
+    margin-bottom: 15px;
+    padding: 5px 200px 5px 5px;
+    align-self: flex-end;
+
+    font-size: @semi-heading;
+    color: @black;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    background-color: #e1d9c9;
+
+    position: relative;
+}
+
+.collections__subtitle:before {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2px;
+
+    background-color: @black;
+    position: absolute;
+    top: 50%;
+    left: -30%;
+    z-index: 1;
+}
+
+
+
+/*Media*/
+/*Max-width: 770px*/
+@media (max-width: 770px) {
+    .collections__subtitle {
+        padding: 0;
+        align-self: center;
+        text-align: center;
+    }
+
+    .collections__subtitle:before {
+        display: none;
+    }
+}

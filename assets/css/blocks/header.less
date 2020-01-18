@@ -1,0 +1,61 @@
+// main: ../style.less
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header.fixed {
+    background-color: @olive;
+    position: fixed;
+    z-index: 20;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 200px;
+    height: 138px;
+    background-image: url("@{img-path}/header/header-ellipse.png"); 
+}
+
+.header__img {
+    margin: 20px auto;
+}
+
+.header.fixed .header__img {
+    cursor: pointer;
+}
+
+
+
+/*Media*/ 
+/*Max-width: 990px*/
+@media (max-width: 990px) {
+    .header__logo {
+        width: 160px;
+        background-size: 160px 110px;
+        background-repeat: no-repeat;
+    }
+}
+
+/*Max-width: 770px*/
+@media (max-width: 770px) {
+    .header {
+        background-color: @olive;
+        position: relative;
+    }
+
+    .header__logo {  
+        width: auto;
+        height: auto;  
+        background-image: none;
+    }
+}

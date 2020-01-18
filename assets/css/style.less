@@ -1,0 +1,59 @@
+// out: style.css
+
+@import "vars";
+
+body {
+	margin: 0;
+	font-size: @regular;
+	font-family: 'Montserrat', sans-serif;
+	color: @light-gray;
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+img {
+  display: block;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page {
+  overflow: hidden;
+}
+
+/*Vendor*/
+@import "vendor/slick_slider";
+@import "vendor/intro_slider";
+@import "vendor/backpack_slider";
+@import "vendor/card_slider";
+
+/*Blocks*/
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/backpack";
+@import "blocks/collections";
+@import "blocks/properties";
+@import "blocks/goods";
+@import "blocks/card";
+@import "blocks/tabs";
+@import "blocks/click-counter";
+@import "blocks/footer";
+@import "blocks/search";
+@import "blocks/navigation";
+@import "blocks/socials";
+@import "blocks/address";
+@import "blocks/newsletter";

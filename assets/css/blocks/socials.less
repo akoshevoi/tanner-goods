@@ -1,0 +1,98 @@
+// main: ../style.less
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials__logo {
+    text-transform: uppercase;
+}
+
+.socials__link {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-right: 70px;
+
+    text-decoration: none;
+    font-weight: 700;
+    color: @gray;
+
+    position: relative;
+}
+
+.socials__link:before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+
+    background-color: @olive;
+    opacity: 0;
+
+    position: absolute;
+    bottom: 45%;
+    left: -55%;
+
+    transition: opacity .3s linear;
+}
+
+.socials__link:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+
+    background-color: @olive;
+    border-radius: 50%;
+    opacity: 0;
+
+    position: absolute;
+
+    bottom: 45%;
+    right: 5%;
+
+    transition: opacity .3s linear;
+}
+
+.socials__link:hover {
+    color: @black;
+}
+
+.socials__link:hover.socials__link:before,
+.socials__link:hover.socials__link:after {
+    color: @black;
+    opacity: 1;
+}
+
+
+
+/*Media*/ 
+/*Max-width: 1200px*/
+@media (max-width: 1200px) {
+    .socials__link {
+        padding: 5px 10px;
+        margin-right: 0; 
+    }
+}
+
+/*Max-width: 990px*/
+@media (max-width: 990px) {
+    .socials__link {
+        padding: 5px;
+    }
+
+    .socials__logo {
+        width: 35%;
+    }
+}
+
+/*Max-width: 470px*/
+@media (max-width: 470px) {
+    .socials__link {
+        padding: 4px;
+        font-weight: 400;
+        font-size: 13px;
+    }
+}
