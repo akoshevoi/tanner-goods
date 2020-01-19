@@ -1918,9 +1918,13 @@ img {
 }
 /*Max-width: 470px*/
 @media (max-width: 470px) {
+  .navigation__img {
+    width: 100px;
+  }
   .navigation__link {
     margin-right: 3px;
     padding: 5px;
+    font-size: 9px;
   }
 }
 .socials {
@@ -1992,10 +1996,13 @@ img {
 }
 /*Max-width: 470px*/
 @media (max-width: 470px) {
+  .socials__logo {
+    font-size: 9px;
+  }
   .socials__link {
     padding: 4px;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 10px;
   }
 }
 .address {
@@ -2086,9 +2093,12 @@ img {
 /*Max-width: 470px*/
 @media (max-width: 470px) {
   .newsletter__input {
-    width: 150px;
+    width: 125px;
   }
   .newsletter__btn {
-    width: 40px;
+    width: 30px;
+  }
+  .newsletter__btn:before {
+    left: 30%;
   }
 }
