@@ -1714,6 +1714,9 @@ img {
   .card__slider .slick-prev {
     left: 30%;
   }
+  .card__questions {
+    font-size: 9px;
+  }
 }
 .tabs {
   margin-bottom: 25px;
@@ -1789,7 +1792,7 @@ img {
   }
   .tabs__content-item {
     padding: 0 10px 10px;
-    font-size: 9px;
+    font-size: 11px;
   }
 }
 .click-counter {
