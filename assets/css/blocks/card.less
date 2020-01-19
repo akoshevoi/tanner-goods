@@ -309,20 +309,24 @@
 /*Max-width: 470px*/
 @media(max-width: 470px) {
     .card__inner {
-        width: 430px;
+        width: 300px;
     }
 
     .card__content {
         padding: 0 10px;
     }
 
+    .card__header {
+        flex-wrap: wrap;
+    }
+
     .card__logo {
-        width: 35%;
+        width: 100%;
         font-size: 10px;
     }
 
     .card__name {
-        width: 60%;
+        width: 100%;
     }
 
     .card__button {
@@ -331,5 +335,26 @@
 
     .card__social-inner {
         left: 93%;
+    }
+
+    .card__slider .slider-nav .slick-list {
+        padding: 5px !important;
+    }
+
+    .card__slider .slider-nav {
+        width: 260px;    
+    }
+
+    .card__slider .slider-nav__item {
+        height: 44px;
+        line-height: 1.8;
+    }
+
+    .card__slider .slick-next {
+        right: 30%;
+    }
+
+    .card__slider .slick-prev {
+        left: 30%;
     }
 }
