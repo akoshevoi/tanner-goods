@@ -403,7 +403,7 @@ img {
 @media (max-width: 470px) {
   .backpack__cost {
     top: -7%;
-    width: 350px;
+    width: 300px;
   }
   .backpack__item-2:after {
     width: 30px;
@@ -1007,6 +1007,7 @@ img {
   }
   .backpack__description {
     min-width: 320px;
+    padding: 5px;
   }
   .backpack__title {
     font-size: 23px;
@@ -1354,14 +1355,14 @@ img {
 }
 /*Max-width: 470px*/
 @media (max-width: 470px) {
-  .properties__img--1 {
-    width: 480px;
+  .properties__photo--1 {
+    margin-right: 20px;
   }
-  .properties__img--2 {
-    width: 400px;
-  }
+  .properties__img--1,
+  .properties__img--2,
+  .properties__img--3,
   .properties__img--4 {
-    width: 420px;
+    width: 350px;
   }
 }
 .goods {
