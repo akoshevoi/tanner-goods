@@ -1918,6 +1918,9 @@ img {
 }
 /*Max-width: 470px*/
 @media (max-width: 470px) {
+  .navigation {
+    margin-bottom: 15px;
+  }
   .navigation__img {
     width: 100px;
   }
@@ -2024,6 +2027,12 @@ img {
     width: 50%;
   }
 }
+/*Max-width: 470px*/
+@media (max-width: 470px) {
+  .address {
+    font-size: 13px;
+  }
+}
 .newsletter {
   width: 25%;
   max-width: 275px;
@@ -2092,6 +2101,9 @@ img {
 }
 /*Max-width: 470px*/
 @media (max-width: 470px) {
+  .newsletter {
+    font-size: 13px;
+  }
   .newsletter__input {
     width: 125px;
   }
