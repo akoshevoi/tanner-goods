@@ -171,8 +171,12 @@
 
 /*Max-width: 575px*/
 @media (max-width: 575px) {
+    .slick-dots:before {
+       display: none;
+    }
+
     .intro__slider .slick-arrow {
-        display: none;
+        display: none !important;
     }
 
     .intro__slider .slick-dots {
@@ -183,6 +187,6 @@
 /*Max-width: 470px*/
 @media (max-width: 470px) {
     .intro__slider .slick-dots {
-        left: 0;
+        top: 23%;
     }
 }
