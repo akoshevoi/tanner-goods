@@ -1003,10 +1003,10 @@ img {
 /*Max-width: 470px*/
 @media (max-width: 470px) {
   .backpack__name {
-    min-width: 405px;
+    min-width: 300px;
   }
   .backpack__description {
-    min-width: 435px;
+    min-width: 320px;
   }
   .backpack__title {
     font-size: 23px;
